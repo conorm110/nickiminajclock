@@ -19,11 +19,9 @@ void loop()
 }
 
 void playSound() {
-  int i = 0;
-  while(i < 6) {
+  for (int i = 0; i < 6; i++) {
     startPlayback(quiet, sizeof(quiet));
     delay(1500);
-    i++;
   }
   startPlayback(loud, sizeof(loud));
   delay(1100);
